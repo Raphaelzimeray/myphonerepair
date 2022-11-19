@@ -5,19 +5,21 @@
 
   <div class="photo-et-caracteristiques-des-telephones">
     <% @phones.each do |phone| %>
-      <div class="cards-and-description">
-        <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path phone.photo.key%>')">
-        </div>
-        <div class="caracteristiques-telephone">
-          <strong>
-            <h2> Marque: <%= phone.brand %></h2>
+      <%= link_to phone_path(phone), class: 'link-index' do %>
+        <div class="cards-and-description">
+          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path phone.photo.key%>')">
+          </div>
+          <div class="caracteristiques-telephone">
+            <strong>
+              <h2> Marque: <%= phone.brand %></h2>
 
-            <h2> Modèle : <%= phone.model %></h2>
+              <h2> Modèle : <%= phone.model %></h2>
 
-            <h4> Prix : <%= phone.price %>€</h4>
-          </strong>
+              <h4> Prix : <%= phone.price %>€</h4>
+            </strong>
+          </div>
         </div>
-      </div>
+      <% end %>
     <% end %>
   </div>
 </div>

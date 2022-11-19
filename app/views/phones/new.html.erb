@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="h1-ajoutez-votre-telephone">
+    <h1 class="ajoutez-votre-telephone"> Ajoutez votre téléphone: </h1>
+  </div>
+
+  <div class="formulaire-div-parente">
+    <div class="formulaire">
+      <%= simple_form_for(@phone) do |f| %>
+      <%= f.input :brand %>
+      <%= f.input :model %>
+      <%= f.input :capacity %>
+      <%= f.input :color %>
+      <%= f.input :camera %>
+      <%= f.input :year %>
+      <%= f.input :processor %>
+      <%= f.input :price %>
+      <%= f.input :photo, as: :file %>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>
