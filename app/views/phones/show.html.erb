@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="h1-votre-telephone">
+    <h1 class="votre-telephone">Votre téléphone: </h1>
+  </div>
+  <div class="div-parente-info-telephone">
+    <div class="informations-du-telephone">
+        <strong>
+          <h2> Marque: <%= @phone.brand %></h2>
+          <h2> Modèle: <%= @phone.model %></h2>
+        </strong>
+          <h4> Capacité de stockage: <%= @phone.capacity %></h4>
+          <h4> Couleur: <%= @phone.color %></h4>
+          <h4> Appareil Photo: <%= @phone.camera %></h4>
+          <h4> Année: <%= @phone.year %></h4>
+          <h4> Processeur: <%= @phone.processor %></h4>
+          <h4> Prix <%= @phone.price %> €</h4>
+      </div>
+    </div>
+  <div class=" row d-flex justify-content-center">
+    <div class="photo-de-la-show">
+        <%= cl_image_tag @phone.photo.key, class: "photo-de-la-show-telephone" %>
+    </div>
+  </div>
+</div>
