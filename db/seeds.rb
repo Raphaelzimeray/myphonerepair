@@ -21,7 +21,7 @@ iphone14pro = Phone.new(
   model: "I Phone 14 Pro",
   capacity: 256,
   color: "Violet",
-  camera: "48 Megapixels",
+  camera: "48 Mégapixels",
   year: 2022,
   processor: "A16 Bionic",
   price: 1459
@@ -37,7 +37,7 @@ samsunggalaxys22 = Phone.new(
   model: "S22 Ultra",
   capacity: 512,
   color: "Gris",
-  camera: "108 Megapixels",
+  camera: "108 Mégapixels",
   year: 2022,
   processor: "SoC Exynos 2200",
   price: 1349
@@ -54,7 +54,7 @@ googlepixel7 = Phone.new(
   model: "Pixel 7",
   capacity: 128,
   color: "Vert",
-  camera: "50 + 12 Megapixels",
+  camera: "50 + 12 Mégapixels",
   year: 2022,
   processor: "Tensor G2",
   price: 649
@@ -71,7 +71,7 @@ nokia7plus = Phone.new(
   model: "7 Plus",
   capacity: 256,
   color: "Blanc",
-  camera: "13 Megapixels",
+  camera: "13 Mégapixels",
   year: 2018,
   processor: "Snapdragon 660",
   price: 184
@@ -88,7 +88,7 @@ motorolarazr = Phone.new(
   model: "Razr 2022",
   capacity: 256,
   color: "Noir",
-  camera: "50 + 13 Megapixels",
+  camera: "50 + 13 Mégapixels",
   year: 2022,
   processor: "Snapdraon 8+ Gen1",
   price: 1299
@@ -105,7 +105,7 @@ huawei_y9 = Phone.new(
   model: "Y9",
   capacity: 64,
   color: "Bleue",
-  camera: "13 + 2 Megapixels",
+  camera: "13 + 2 Mégapixels",
   year: 2019,
   processor: "Krin 710",
   price: "143"
@@ -122,7 +122,7 @@ iphoneSE = Phone.new(
   model: "Iphone SE",
   capacity: 64,
   color: "Rose",
-  camera: "12 Megapixels",
+  camera: "12 Mégapixels",
   year: 2016,
   processor: "A9",
   price: "89"
@@ -139,7 +139,7 @@ iphone12promax = Phone.new(
   model: "Iphone 12 PRO Max",
   capacity: 256,
   color: "Bleu",
-  camera: "12 Megapixels",
+  camera: "12 Mégapixels",
   year: 2020,
   processor: "A14 Bionic",
   price: "729"
@@ -156,7 +156,7 @@ samsungA71 = Phone.new(
   model: "A71",
   capacity: 128,
   color: "Bleu",
-  camera: "64 Megapixels",
+  camera: "64 Mégapixels",
   year: 2019,
   processor: "Snapdragon 730 Qualcomm",
   price: "279"
@@ -174,7 +174,7 @@ sony_xperia_10 = Phone.new(
   model: "Xperia 10",
   capacity: 128,
   color: "Noir",
-  camera: "12 + 8 + 8 Megapixels",
+  camera: "12 + 8 + 8 Mégapixels",
   year: 2020,
   processor: "Snapdragon 665",
   price: "328"
