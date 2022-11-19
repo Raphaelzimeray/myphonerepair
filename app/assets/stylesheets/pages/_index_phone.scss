@@ -2,6 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 25px;
 }
 
 .voici-les-telephones{
@@ -38,4 +40,14 @@
 
 .caracteristiques-telephone{
   padding: 10px;
+}
+
+.link-index{
+  text-decoration: none;
+  color: black;
+}
+
+
+.link-index:hover{
+  color:black;
 }
