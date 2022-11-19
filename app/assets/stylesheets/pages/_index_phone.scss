@@ -11,3 +11,31 @@
   border-radius: 8px;
   padding: 20px;
 }
+
+.photo-et-caracteristiques-des-telephones{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.cards-and-description{
+  width: 400px;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+
+.card-category{
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.caracteristiques-telephone{
+  padding: 10px;
+}
