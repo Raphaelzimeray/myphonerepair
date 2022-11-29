@@ -6,7 +6,7 @@ class ReparationsController < ApplicationController
 
   def show
     @reparation = Reparation.find(params[:id])
-    @phone = @booking.phone
+    @phone = @reparation.phone
   end
 
   def new
@@ -15,11 +15,11 @@ class ReparationsController < ApplicationController
   end
 
   def create
-    @reparation = Reparation.new(reparation_params)
+    @reparation = Reparation.create(reparation_params)
     @reparation.phone = Phone.find(params[:phone_id])
     @phone = Phone.find(params[:phone_id])
       if @reparation.save
-        redirect_to  phone_reparation_path(@reparation)
+        redirect_to  phone_reparation_path(@phone, @reparation)
       else
         render :new
       end
