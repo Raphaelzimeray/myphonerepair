@@ -2,6 +2,20 @@
   <div class="h1-votre-telephone">
     <h1 class="votre-telephone">Votre téléphone: </h1>
   </div>
+
+  <div class="div-parente-reservation-et-achat">
+    <div class="acheter-le-tel">
+      <strong>
+        <h4> Ce téléphone vous intéresse ? Cliquez sur ce bouton pour l'acheter</h4>
+      </strong>
+    </div>
+    <div class="reparer-le-tel">
+      <strong>
+        <h4> Vous souhaitez réparer ce téléphone ? Cliquez sur ce bouton</h4>
+        <p> <%= link_to "Réparer", new_phone_reparation_path(@phone), class: "btn btn-dark" %></p>
+      </strong>
+    </div>
+  </div>
   <div class="div-parente-info-telephone">
     <div class="informations-du-telephone">
         <strong>

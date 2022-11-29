@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="h1-nouvelle-reparation"></div>
+    <h1 class="nouvelle-reparation">Nouvelle réparation:</h1>
+  </div>
+  <div class="formulaire-nouvelle-reparation-div-parente">
+    <div class="formulaire-nouvelle-reparation">
+      <%= form_for([@phone, @reparation]) do |f| %>
+      <%= f.label :date %>
+      <%= f.text_field :date %>
+      <%= f.label :price_of_repair %>
+      <%= f.text_field :price_of_repair %>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+</div>

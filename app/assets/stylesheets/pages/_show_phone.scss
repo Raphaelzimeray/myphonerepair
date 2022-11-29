@@ -37,3 +37,29 @@
   display: flex;
   justify-content: center;
 }
+
+.div-parente-reservation-et-achat{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.acheter-le-tel{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.reparer-le-tel{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black ;
+  border-radius: 8px;
+  padding: 20px;
+}
