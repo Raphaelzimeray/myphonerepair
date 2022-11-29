@@ -12,7 +12,10 @@ require 'open-uri'
 
 puts "Cleaning database"
 
+Reparation.destroy_all
+
 Phone.destroy_all
+
 
 puts 'Creating 10 phones'
 
