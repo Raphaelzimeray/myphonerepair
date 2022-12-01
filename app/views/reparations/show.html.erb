@@ -1,3 +1,17 @@
 <div class="container">
-  <h1>Voici l'ensemble des réparations à venir</h1>
+  <div class="div-parente-h1-show-reparation">
+    <h1 class="votre-nouvelle-reparation">Votre nouvelle réparation :</h1>
+  </div>
+
+  <div class="div-parente-recapitulatif-reparation">
+    <div class="recapitulatif-reparation">
+      <ul class="elements-ul-reparation">
+        <li> Date de la réparation : <%= @reparation.date %></li>
+        <li> Montant total : <%= @reparation.price_of_repair %></li>
+        <li> Marque du téléphone : <%= @reparation.phone.brand %></li>
+        <li> Modèle du téléphone : <%= @reparation.phone.model %></li>
+      </ul>
+       <%= cl_image_tag @reparation.phone.photo.key, class:"photo-show-reparation" %>
+    </div>
+  </div>
 </div>
