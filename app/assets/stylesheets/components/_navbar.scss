@@ -10,3 +10,22 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.avatar{
+  height: 61px;
+  width: 61px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+.navbar-nav{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  width: 100%;
+}
+
+.collapse{
+  width: 100%;
+}

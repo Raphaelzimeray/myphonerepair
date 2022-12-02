@@ -19,7 +19,7 @@ class ReparationsController < ApplicationController
     @reparation.phone = Phone.find(params[:phone_id])
     @phone = Phone.find(params[:phone_id])
       if @reparation.save
-        redirect_to  phone_reparation_path(@phone, @reparation)
+        redirect_to  reparation_path(@reparation)
       else
         render :new
       end
