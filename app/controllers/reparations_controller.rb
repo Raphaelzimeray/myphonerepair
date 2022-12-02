@@ -28,7 +28,7 @@ class ReparationsController < ApplicationController
   private
 
   def reparation_params
-    params.require(:reparation).permit(:date, :price_of_repair)
+    params.require(:reparation).permit(:date, :price_of_repair, :reparation_type)
   end
 
 end
