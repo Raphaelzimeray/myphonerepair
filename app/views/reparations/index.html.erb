@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="h1-vos-reservations">
+    <h1 class="vos-reservations"> Vos réservations</h1>
+  </div>
+
+  <div class="div-parente-reservations">
+    <div class="reservations">
+      <% @reparations.each do |reparation| %>
+        <div class="reparation-div-enfant">
+          <div class="description-reservation">
+            <p> Date de la réservation: <%= reparation.date.strftime('%d-%m-%Y') %></p>
+            <p> Prix de la réservation: <%= reparation.price_of_repair %> </p>
+          </div>
+          <div class="photo-reservation">
+             <%= cl_image_tag reparation.phone.photo.key, class:"phone-photo-index-reparation" %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
