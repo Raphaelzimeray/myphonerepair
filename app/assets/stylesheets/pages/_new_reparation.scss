@@ -27,3 +27,37 @@
   justify-content: center;
   margin-bottom: 25px;
 }
+
+.div-parente-elements-marketing{
+  display: flex;
+  justify-content: space-between;
+}
+
+.div-parente-agents-certifies{
+  display: flex;
+  justify-content: center;
+}
+
+.agents-certifies{
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 25px;
+  padding: 25px;
+}
+
+.h4-agents-certifies{
+  display: flex;
+  justify-content: center;
+}
+
+.div-parente-garantie{
+  display: flex;
+  justify-content: center;
+}
+
+.garantie{
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 25px;
+  padding: 25px;
+}
