@@ -6,10 +6,11 @@
   <div class="div-parente-recapitulatif-reparation">
     <div class="recapitulatif-reparation">
       <ul class="elements-ul-reparation">
-        <li> Date de la réparation : <%= @reparation.date %></li>
+        <li> Date de la réparation : <%= @reparation.date.strftime('%d-%m-%Y') %></li>
         <li> Montant total : <%= @reparation.price_of_repair %></li>
         <li> Marque du téléphone : <%= @reparation.phone.brand %></li>
         <li> Modèle du téléphone : <%= @reparation.phone.model %></li>
+        <li> Type de réparation : <%= @reparation.reparation_type %></li>
       </ul>
        <%= cl_image_tag @reparation.phone.photo.key, class:"photo-show-reparation" %>
     </div>
