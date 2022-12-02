@@ -9,6 +9,7 @@
       <%= f.text_field :date %>
       <%= f.label :price_of_repair %>
       <%= f.text_field :price_of_repair %>
+      <%= f.select(:reparation_type, Reparation::LISTE_REPARATIONS) %>
       <%= f.submit %>
       <% end %>
     </div>
