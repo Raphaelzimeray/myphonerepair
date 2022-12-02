@@ -14,4 +14,9 @@
        <%= cl_image_tag @reparation.phone.photo.key, class:"photo-show-reparation" %>
     </div>
   </div>
+  <div class="div-parente-aller-sur-index-reparations">
+    <div class="aller-sur-index-reparation">
+      <h4> Cliquez ci après pour voir l'ensemble de vos réparations à venir :   <%= link_to "Réparations", reparations_path, class:"btn btn-dark" %></h4>
+    </div>
+  </div>
 </div>
