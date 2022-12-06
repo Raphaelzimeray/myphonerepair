@@ -1,0 +1,56 @@
+.h1-your-new-buy{
+  display: flex;
+  justify-content: center;
+}
+
+.your-new-buy{
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.parent-form-new-buy{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.form-new-buy{
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.parent-more-info-on-new-buy{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.get-phone-in-store{
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+  width: 65%;
+}
+
+.h2-phone-in-store{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.get-phone-at-home{
+  border: 1px solid black;
+  border-radius: 8px;
+  margin: 20px;
+  padding: 20px;
+}

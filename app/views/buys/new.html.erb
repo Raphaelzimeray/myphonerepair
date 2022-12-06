@@ -1,1 +1,35 @@
-<h1> Votre nouvel achat</h1>
+<div class="container">
+  <div class="h1-your-new-buy">
+    <h1 class="your-new-buy"> Votre nouvel achat</h1>
+  </div>
+  <div class="parent-form-new-buy">
+    <div class="form-new-buy">
+      <%= form_for([@phone, @buy]) do |f| %>
+      <%= f.label :phone_price %>
+      <%= f.text_field :phone_price %>
+      <%= f.label :delivery_date %>
+      <%= f.text_field :delivery_date %>
+      <%= f.label :accessories %>
+      <%= f.select(:accessories, Buy::LIST_ACCESSORIES) %>
+      <%= f.label :warranty %>
+      <%= f.select(:warranty, Buy::LIST_WARRANTY) %>
+      <%= f.submit %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="parent-more-info-on-new-buy">
+    <div class="get-phone-in-store">
+      <div class="h2-phone-in-store">
+        <h2>Retrait en magazin</h2>
+      </div>
+        <h4> Nos agents vous acceuillent du lundi au samedi, de 8:00 à 20:00</h4>
+    </div>
+    <div class="get-phone-at-home">
+      <div class="h2-phone-at-home">
+        <h2>Livraison gratuite sous 2 jours dans toute la France</h2>
+      </div>
+        <h4> Nos chauffeurs vous remettrons l'appareil et ses accessoires en main propre</h4>
+    </div>
+  </div>
+</div>
