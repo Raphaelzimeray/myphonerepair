@@ -9,14 +9,13 @@
         <div class="cards-and-description">
           <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path phone.photo.key%>')">
           </div>
-          <div class="caracteristiques-telephone">
-            <strong>
-              <h2> Marque: <%= phone.brand %></h2>
-
-              <h2> Modèle : <%= phone.model %></h2>
-
-              <h4> Prix : <%= phone.price %>€</h4>
-            </strong>
+          <div class="phone-spec">
+              <div class="title">
+                <p><%= phone.model %></p>
+                <p><%= phone.brand %></p>
+              </div>
+              <div class="desc"><p><%= phone.capacity %></p></div>
+              <div class="footer"><p><%= phone.price %>€</p></div>
           </div>
         </div>
       <% end %>
