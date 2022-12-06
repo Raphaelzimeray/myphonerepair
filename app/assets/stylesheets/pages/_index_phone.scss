@@ -1,4 +1,4 @@
-.h1-voici-les-telephones{
+.h1-voici-les-telephones {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   margin-top: 25px;
 }
 
-.voici-les-telephones{
+.voici-les-telephones {
   margin-top: 15px;
   margin-bottom: 15px;
   border: 1px solid black;
@@ -14,7 +14,7 @@
   padding: 20px;
 }
 
-.photo-et-caracteristiques-des-telephones{
+.photo-et-caracteristiques-des-telephones {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
@@ -22,14 +22,14 @@
   margin: auto;
 }
 
-.cards-and-description{
+.cards-and-description {
   width: 400px;
   border: 1px solid;
   border-radius: 8px;
 }
 
 
-.card-category{
+.card-category {
   width: 100%;
   height: 300px;
   background-size: cover;
@@ -38,16 +38,45 @@
   border-radius: 8px;
 }
 
-.caracteristiques-telephone{
+.phone-spec {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  .title {
+    display: flex;
+    justify-content: space-between ;
+  }
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    p{
+
+    }
+  }
 }
 
-.link-index{
+.link-index {
   text-decoration: none;
   color: black;
 }
 
 
-.link-index:hover{
-  color:black;
+.link-index:hover {
+  color: black;
+}
+
+.parent-model-and-capacity {
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.phone-spec p {
+  margin: 0 !important;
+}
+
+.phone-spec {
+  .footer {
+    font-weight: bold;
+  }
 }
