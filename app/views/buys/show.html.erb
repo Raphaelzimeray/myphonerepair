@@ -2,4 +2,20 @@
   <div class="parent-h1-your-new-phone">
     <h1 class="h1-your-new-phone">Votre nouveau téléphone: </h1>
   </div>
+
+  <div class="parent-recap-show-phone">
+    <div class="recap-show-phone">
+      <ul class="show-phone-ul">
+        <li>Date de livraison : <%= @buy.delivery_date.strftime('%d-%m-%Y') %></li>
+        <li> Accessoires supplémentaires : <%= @buy.accessories %></li>
+        <li> Garantie chosie : <%= @buy.warranty %></li>
+      </ul>
+        <%= cl_image_tag @buy.phone.photo.key, class:"photo-show-phone" %>
+    </div>
+  </div>
+  <div class="parent-go-on-index-buy">
+    <div class="go-on-index-buy">
+      <h4> Cliquez ici pour voir l'ensemble de vos achats : <%= link_to "Mes achats", buys_path, class:"btn btn-dark" %></h4>
+    </div>
+  </div>
 </div>

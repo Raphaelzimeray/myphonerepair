@@ -7,6 +7,7 @@ class BuysController < ApplicationController
   def show
     @buy = Buy.find(params[:id])
     @phone = @buy.phone
+    @buy.delivery_date = @buy.delivery_date + 2.days
   end
 
   def new
@@ -19,7 +20,7 @@ class BuysController < ApplicationController
     @buy.phone = Phone.find(params[:phone_id])
     @phone = Phone.find(params[:phone_id])
       if @buy.save
-        redirect_to  buy_path(@buy)
+        redirect_to buy_path(@buy)
       else
         render :new
       end
@@ -27,8 +28,8 @@ class BuysController < ApplicationController
 
   private
 
-    def buy_params
-      params.require(:buy).permit(:delivery_date, :accessories, :warranty)
-    end
+  def buy_params
+    params.require(:buy).permit(:delivery_date, :accessories, :warranty)
+  end
 
 end

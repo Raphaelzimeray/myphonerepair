@@ -1,6 +1,5 @@
 class Buy < ApplicationRecord
   belongs_to :phone
-  belongs_to :user
   validates :delivery_date, presence: true
   validates :accessories, presence: true
   validates :warranty, presence: true
