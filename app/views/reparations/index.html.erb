@@ -9,7 +9,7 @@
         <div class="reparation-div-enfant">
           <div class="description-reservation">
             <p> Date de la réservation: <%= reparation.date.strftime('%d-%m-%Y') %></p>
-            <p> Prix de la réservation: <%= reparation.price_of_repair %> </p>
+            <p> Prix de la réservation: <%= reparation.price_of_repair %> € </p>
           </div>
           <div class="photo-reservation">
              <%= cl_image_tag reparation.phone.photo.key, class:"phone-photo-index-reparation" %>
