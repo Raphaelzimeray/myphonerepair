@@ -28,7 +28,7 @@ class BuysController < ApplicationController
   private
 
     def buy_params
-      params.require(:buy).permit(:phone_price, :delivery_date, :accessories, :warranty)
+      params.require(:buy).permit(:delivery_date, :accessories, :warranty)
     end
 
 end
