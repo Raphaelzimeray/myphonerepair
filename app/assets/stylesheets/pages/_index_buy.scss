@@ -9,3 +9,30 @@
   margin: 20px;
   padding: 20px;
 }
+
+.index-buy-cards-parent{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.buy-cards-parent{
+  display: flex;
+  flex-direction: column;
+}
+
+.description-and-photo-index-buy{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+  border-radius: 8px;
+  width: 420px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.photo-index-buy{
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+}
