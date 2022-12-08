@@ -2,4 +2,19 @@
   <div class="h1-buys-index-parent">
     <h1 class="buys-index-h1"> Voici vos achats: </h1>
   </div>
+  <div class="index-buy-cards-parent">
+    <div class="buy-cards-parent">
+      <% @buys.each do |buy| %>
+        <div class="description-and-photo-index-buy">
+          <div class="description-index-buy">
+            <p> Date de livraison: <%= buy.delivery_date.strftime('%d-%m-%Y') %></p>
+            <p> Accesoires: <%= buy.accessories %></p>
+          </div>
+          <div class="photo-index-buy">
+            <%= cl_image_tag buy.phone.photo.key, class: "photo-index-buy"  %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
