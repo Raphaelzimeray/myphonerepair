@@ -6,6 +6,10 @@
   margin-top: 25px;
 }
 
+.container {
+  background-color: #F9F9F9;
+}
+
 .voici-les-telephones {
   margin-top: 15px;
   margin-bottom: 15px;
@@ -18,13 +22,30 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  flex-wrap: wrap;
   margin: auto;
+
+  @media all and (max-width: 480px) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media all and (min-width: 480px) and (max-width: 768px) {
+    & {
+      grid-template-columns: 1fr;
+    }
+  }
+
+
+  @media all and (min-width: 768px) and (max-width: 1024px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 }
 
 .cards-and-description {
-  width: 400px;
-  border: 1px solid;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
 }
 
@@ -39,19 +60,20 @@
 }
 
 .phone-spec {
-  padding: 10px;
+  padding: 25px;
   display: flex;
   flex-direction: column;
+
   .title {
     display: flex;
-    justify-content: space-between ;
+    justify-content: space-between;
   }
+
   .footer {
     display: flex;
     justify-content: flex-end;
-    p{
 
-    }
+    p {}
   }
 }
 
