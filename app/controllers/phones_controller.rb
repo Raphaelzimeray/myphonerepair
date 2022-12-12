@@ -24,6 +24,6 @@ class PhonesController < ApplicationController
   private
 
   def phone_params
-    params.require(:phone).permit(:brand, :model, :capacity, :color, :camera, :year, :processor, :price, :photo)
+    params.require(:phone).permit(:brand, :model, :capacity, :color, :camera, :year, :processor, :price, photos: [])
   end
 end

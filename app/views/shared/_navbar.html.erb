@@ -1,7 +1,7 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://f.hellowork.com/blogdumoderateur/2022/09/Apple-iPhone-14-Pro-iPhone-14-Pro-Max.jpg", id: "iphone14-image-navbar" %>
-  <% end %>
+  <div class="my-phone-repair">
+    <p>My Phone Repair</p>
+  </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -9,7 +9,7 @@
 
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
+    <ul class="navbar-nav justify-content-end li-li">
       <% if user_signed_in? %>
         <li class="nav-item active telephones">
           <%= link_to "Téléphones", phones_path, class: "nav-link" %>

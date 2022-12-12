@@ -14,7 +14,7 @@
       <%= f.input :year %>
       <%= f.input :processor %>
       <%= f.input :price %>
-      <%= f.input :photo, as: :file %>
+      <%= f.input :photos, as: :file, input_html: { multiple: true } %>
       <%= f.submit %>
       <% end %>
     </div>

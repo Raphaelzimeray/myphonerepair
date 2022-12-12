@@ -36,7 +36,11 @@ iphone14pro = Phone.new(
 )
 
 file = URI.open('https://www.apple.com/v/iphone-14-pro/c/images/overview/hero/hero_endframe__dtzvajyextyu_large.jpg')
-iphone14pro.photo.attach(io: file, filename: 'iphone14pro.jpg', content_type: 'iphone14pro/jpg')
+iphone14pro.photos.attach(io: file, filename: 'iphone14pro.jpg', content_type: 'iphone14pro/jpg')
+file = URI.open('https://imageio.forbes.com/specials-images/imageserve/6321aca5df0a9fa9eee9950b/0x0.jpg?format=jpg&crop=1456,970,x63,y104,safe&width=1200')
+iphone14pro.photos.attach(io: file, filename: 'iphone14pro.jpeg', content_type: 'iphone14pro/jpeg')
+file = URI.open('https://m-cdn.phonearena.com/images/review/5417-wide-two_1200/iPhone-14-Pro-Max-vs-iPhone-14-Pro.jpg')
+iphone14pro.photos.attach(io: file, filename: 'iphone14pro.jpgg', content_type: 'iphone14pro/jpgg')
 iphone14pro.save!
 puts "#{iphone14pro.model} has been created!"
 
@@ -52,7 +56,7 @@ samsunggalaxys22 = Phone.new(
 )
 
 file = URI.open('https://droidsoft.fr/wp-content/uploads/2022/03/Samsung-Galaxy-S22-Introduction-scaled.jpg')
-samsunggalaxys22.photo.attach(io: file, filename: 'samsungs22.jpg', content_type: 'samsungs22/jpg')
+samsunggalaxys22.photos.attach(io: file, filename: 'samsungs22.jpg', content_type: 'samsungs22/jpg')
 samsunggalaxys22.save!
 
 puts "#{samsunggalaxys22.model} has been created!"
@@ -69,7 +73,7 @@ googlepixel7 = Phone.new(
 )
 
 file = URI.open('https://m.media-amazon.com/images/S/aplus-media-library-service-media/e8f773d8-520b-4fcf-a89c-53a92aa6e32f.__CR0,0,1464,600_PT0_SX1464_V1___.jpg')
-googlepixel7.photo.attach(io: file, filename: 'googlepixel7.jpg', content_type: 'googlepixel7/jpg')
+googlepixel7.photos.attach(io: file, filename: 'googlepixel7.jpg', content_type: 'googlepixel7/jpg')
 googlepixel7.save!
 
 puts "#{googlepixel7.model} has been created!"
@@ -86,7 +90,7 @@ nokia7plus = Phone.new(
 )
 
 file = URI.open('https://360view.hum3d.com/zoom/Nokia/Nokia_7_Plus_White_1000_0002.jpg')
-nokia7plus.photo.attach(io: file, filename: 'nokia.jpg', content_type: 'nokia/jpg')
+nokia7plus.photos.attach(io: file, filename: 'nokia.jpg', content_type: 'nokia/jpg')
 nokia7plus.save!
 puts "#{nokia7plus.model} has been created!"
 
@@ -103,7 +107,7 @@ motorolarazr = Phone.new(
 )
 
 file = URI.open('https://cdn.lesnumeriques.com/optim/news/18/189273/c390e811-motorola-razr-2022__1200_1200__273-0-1195-922.jpeg')
-motorolarazr.photo.attach(io: file, filename: 'motorola.jpeg', content_type: 'motorola/jpeg')
+motorolarazr.photos.attach(io: file, filename: 'motorola.jpeg', content_type: 'motorola/jpeg')
 motorolarazr.save!
 
 puts "#{motorolarazr.model} has been created!"
@@ -120,7 +124,7 @@ huawei_y9 = Phone.new(
 )
 
 file = URI.open('https://cdns.4clik.com/smartphone/SMTPH9779/huawei-y9-prime-2019-128go-4g-pic-9-lg.jpg')
-huawei_y9.photo.attach(io: file, filename: 'Huaweiy9.jpg', content_type: 'Huaweiy9/jpg')
+huawei_y9.photos.attach(io: file, filename: 'Huaweiy9.jpg', content_type: 'Huaweiy9/jpg')
 huawei_y9.save!
 
 puts "#{huawei_y9.model} has been created!"
@@ -137,7 +141,7 @@ iphoneSE = Phone.new(
 )
 
 file = URI.open('https://images.frandroid.com/wp-content/uploads/2016/05/iphone-se-15.jpg')
-iphoneSE.photo.attach(io: file, filename: 'Iphonese.jpg', content_type: 'Iphonese/jpg')
+iphoneSE.photos.attach(io: file, filename: 'Iphonese.jpg', content_type: 'Iphonese/jpg')
 iphoneSE.save!
 
 puts "#{iphoneSE.model} has been created!"
@@ -154,7 +158,7 @@ iphone12promax = Phone.new(
 )
 
 file = URI.open('https://images.bfmtv.com/MAtvQtgAYvLnK43_8RImYaz23KI=/0x0:2048x1365/2048x0/biz_dev/1655121521444_iphone_12_pro_max_offre_cdiscount_jpg.jpg')
-iphone12promax.photo.attach(io: file, filename: 'Iphone12pro.jpg', content_type: 'Iphone12pro/jpg')
+iphone12promax.photos.attach(io: file, filename: 'Iphone12pro.jpg', content_type: 'Iphone12pro/jpg')
 iphone12promax.save!
 
 puts "#{iphone12promax.model} has been created!"
@@ -171,7 +175,7 @@ samsungA71 = Phone.new(
 )
 
 file = URI.open('https://media.ldlc.com/r1600/ld/products/00/05/55/97/LD0005559736_2.jpg')
-samsungA71.photo.attach(io: file, filename: 'samsungA71.jpg', content_type: 'samsungA71/jpg')
+samsungA71.photos.attach(io: file, filename: 'samsungA71.jpg', content_type: 'samsungA71/jpg')
 samsungA71.save!
 
 puts "#{samsungA71.model} has been created"
@@ -189,7 +193,7 @@ sony_xperia_10 = Phone.new(
 )
 
 file = URI.open('https://www.tradeinn.com/f/13798/137988687_2/sony-smartphone-xperia-10-ii-4gb-128gb-6-dual-sim.jpg')
-sony_xperia_10.photo.attach(io: file, filename: 'sony.jpg', content_type: 'sony/jpg')
+sony_xperia_10.photos.attach(io: file, filename: 'sony.jpg', content_type: 'sony/jpg')
 sony_xperia_10.save!
 
 puts "#{sony_xperia_10.model} has been created!"
