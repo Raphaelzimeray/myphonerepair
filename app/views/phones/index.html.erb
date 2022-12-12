@@ -7,7 +7,7 @@
     <% @phones.each do |phone| %>
       <%= link_to phone_path(phone), class: 'link-index' do %>
         <div class="cards-and-description">
-          <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path phone.photo.key%>')">
+            <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path phone.photos.first.key %>')">
           </div>
           <div class="phone-spec">
               <div class="title">

@@ -57,6 +57,10 @@ samsunggalaxys22 = Phone.new(
 
 file = URI.open('https://droidsoft.fr/wp-content/uploads/2022/03/Samsung-Galaxy-S22-Introduction-scaled.jpg')
 samsunggalaxys22.photos.attach(io: file, filename: 'samsungs22.jpg', content_type: 'samsungs22/jpg')
+file = URI.open('https://i.ytimg.com/vi/T73-fgd_gqo/maxresdefault.jpg')
+samsunggalaxys22.photos.attach(io: file, filename: 'samsungs22ultra.jpg', content_type: 'samsungs22ultra/jpg')
+file = URI.open('https://images.samsung.com/ch_fr/smartphones/galaxy-s22-ultra/buy/02_carousel/05_exclusive-colors/s22_ultra_exclusive_carousel_red_productkv_mo_nocopy.jpg')
+samsunggalaxys22.photos.attach(io: file, filename: 'samsungs22s22.jpg', content_type: 'samsungs22s22/jpg')
 samsunggalaxys22.save!
 
 puts "#{samsunggalaxys22.model} has been created!"
@@ -74,6 +78,10 @@ googlepixel7 = Phone.new(
 
 file = URI.open('https://m.media-amazon.com/images/S/aplus-media-library-service-media/e8f773d8-520b-4fcf-a89c-53a92aa6e32f.__CR0,0,1464,600_PT0_SX1464_V1___.jpg')
 googlepixel7.photos.attach(io: file, filename: 'googlepixel7.jpg', content_type: 'googlepixel7/jpg')
+file = URI.open('https://www.presse-citron.net/app/uploads/2022/09/pixel-7-pro-lfstyle.jpg')
+googlepixel7.photos.attach(io: file, filename: 'google7.jpg', content_type: 'google7pixel.jpg')
+file = URI.open('https://www.01net.com/app/uploads/2022/10/Google-Pixel-7-7-PRo.jpg')
+googlepixel7.photos.attach(io: file, filename: 'google7px.jpg', content_type: 'google7px/jpg')
 googlepixel7.save!
 
 puts "#{googlepixel7.model} has been created!"
@@ -91,6 +99,10 @@ nokia7plus = Phone.new(
 
 file = URI.open('https://360view.hum3d.com/zoom/Nokia/Nokia_7_Plus_White_1000_0002.jpg')
 nokia7plus.photos.attach(io: file, filename: 'nokia.jpg', content_type: 'nokia/jpg')
+file = URI.open('https://www.cdiscount.com/pdt2/8/1/8/1/700x700/nok4251281606818/rw/nokia-7-plus-15-2-cm-6-64-go-12-mp-android.jpg')
+nokia7plus.photos.attach(io: file, filename: 'nokia7.jpg', content_type: 'nokia7/jpg')
+file = URI.open('https://images.ctfassets.net/wcfotm6rrl7u/6G3UCVIrIQWLFkYZrqGTwE/cd15b0b912d9c97d0c0f8f5eab68205b/nokia_7_Plus-DTC-Audio.jpg')
+nokia7plus.photos.attach(io: file, filename: 'nokia7plus.jpg', content_type: 'nokia7plus/jpg')
 nokia7plus.save!
 puts "#{nokia7plus.model} has been created!"
 
