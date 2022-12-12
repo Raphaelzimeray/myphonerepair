@@ -1,39 +1,60 @@
 <div class="container">
-  <div class="h1-votre-telephone">
-    <h1 class="votre-telephone">Votre téléphone: </h1>
-  </div>
-
-  <div class="div-parente-reservation-et-achat">
-    <div class="acheter-le-tel">
-      <strong>
-        <h4> Ce téléphone vous intéresse ? Cliquez sur ce bouton pour l'acheter</h4>
-        <p> <%= link_to "Acheter",  new_phone_buy_path(@phone), class: "btn btn-dark" %> </p>
-      </strong>
+  <div class="div-parent-h1-and-photo-and-info">
+    <div class="h1-your-phone">
+      <h1 class="your-phone">Votre téléphone </h1>
     </div>
-    <div class="reparer-le-tel">
-      <strong>
-        <h4> Vous souhaitez réparer ce téléphone ? Cliquez sur ce bouton</h4>
-        <p> <%= link_to "Réparer", new_phone_reparation_path(@phone), class: "btn btn-dark" %></p>
-      </strong>
-    </div>
-  </div>
-  <div class="div-parente-info-telephone">
-    <div class="informations-du-telephone">
-        <strong>
-          <h2> Marque: <%= @phone.brand %></h2>
-          <h2> Modèle: <%= @phone.model %></h2>
-        </strong>
-          <h4> Capacité de stockage: <%= @phone.capacity %></h4>
-          <h4> Couleur: <%= @phone.color %></h4>
-          <h4> Appareil Photo: <%= @phone.camera %></h4>
-          <h4> Année: <%= @phone.year %></h4>
-          <h4> Processeur: <%= @phone.processor %></h4>
-          <h4> Prix <%= @phone.price %> €</h4>
+      <div class="photo-and-info-show-parent">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="img-show carousel-inner w-100 ">
+              <% @phone.photos.each_with_index do |photo, index| %>
+                <div class="carousel-item <%= "active" if index.zero? %>">
+                  <%= cl_image_tag photo.key, crop: :fill, class:"photo-show" %>
+                </div>
+              <% end %>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="info-show-parent">
+          <div class="title-name-phone">
+            <div class="phone-model-p">
+              <p class="p-phome-model"> <%= @phone.model %></p>
+            </div>
+            <div class="details-info-title-name-phone">
+              <p> <%= @phone.camera %> | <%= @phone.processor %></p>
+            </div>
+          </div>
+          <div class="phone-brand">
+            <p> Stockage:</p>
+              <div class="boxes-show-phone">
+                <p id="phone-capacity"> <%= @phone.capacity %> GO</p>
+              </div>
+          </div>
+            <div class="phone-brand">
+              <p> Couleur:</p>
+                <div class="boxes-show-phone">
+                  <p id="phone-color"> <%= @phone.color %></p>
+                </div>
+            </div>
+            <div class="phone-brand">
+              <p> Prix: </p>
+                <div class="boxes-show-phone">
+                  <p id="phone-price"> <%= @phone.price %> €</p>
+                </div>
+            </div>
+        </div>
       </div>
-    </div>
-  <div class=" row d-flex justify-content-center">
-    <div class="photo-de-la-show">
-        <%= cl_image_tag @phone.photo.key, class: "photo-de-la-show-telephone" %>
     </div>
   </div>
 </div>

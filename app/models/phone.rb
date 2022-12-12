@@ -1,5 +1,5 @@
 class Phone < ApplicationRecord
-  has_one_attached :photo
+  has_many_attached :photos
   has_many :reparations
   has_many :buys
   validates :brand, presence: true

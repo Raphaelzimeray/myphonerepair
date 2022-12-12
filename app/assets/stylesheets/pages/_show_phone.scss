@@ -1,18 +1,13 @@
-.photo-de-la-show-telephone{
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-}
 
-.h1-votre-telephone{
+.h1-your-phone{
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-bottom: 25px;
+  margin-bottom: 60px;
+  margin-top: 30px;
 }
 
-.votre-telephone{
+.your-phone{
   margin-top: 15px;
   margin-bottom: 15px;
   border: 1px solid black;
@@ -20,46 +15,81 @@
   padding: 20px;
 }
 
-.photo-de-la-show{
-  display: flex;
-  justify-content: center;
-}
-
-.informations-du-telephone{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 20px;
-}
-
-.div-parente-info-telephone{
-  display: flex;
-  justify-content: center;
-}
-
-.div-parente-reservation-et-achat{
+.photo-and-info-show-parent{
   display: flex;
   justify-content: space-around;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 20px;
+  margin-top: 80px;
+  width: 80%;
+  margin: auto;
 }
 
-.acheter-le-tel{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black;
+.photo-show{
+  height: 400px;
+  width: 400px;
   border-radius: 8px;
-  padding: 20px;
+  margin-bottom: 40px;
 }
 
-.reparer-le-tel{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: 1px solid black ;
+.info-show{
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.2);
   border-radius: 8px;
-  padding: 20px;
+}
+
+.boxes-show-phone{
+  border: 1px solid #FD6D34;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 125px;
+  height: 60px;
+  margin-bottom: 30px;
+  color : #FD6D34;
+  background-color: #FFE8E0;
+}
+
+#phone-capacity{
+  margin: auto;
+}
+
+#phone-color{
+  margin: auto;
+}
+
+#phone-price{
+  margin: auto;
+}
+
+.div-parent-h1-and-photo-and-info{
+  font-family: $font-phone-show;
+}
+
+.phone-model-p{
+  font-weight: 700;
+  font-size: 28px;
+  margin: 0;
+}
+
+.details-info-title-name-phone{
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.p-phome-model{
+  margin-bottom: 0px;
+}
+
+.image-caroussel{
+  height: 500px;
+  margin: auto;
+}
+
+.carousel-indicators .li{
+  background-color: aquamarine;
+}
+
+#carouselExampleIndicators{
+  height: 400px;
+  width: 400px;
+  border-radius: 8px;
+  margin-bottom: 40px;
 }
