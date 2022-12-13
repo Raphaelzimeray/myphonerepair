@@ -3,10 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Lato&display=swap');
 // Define fonts for body and headers
-$body-font: "Lato", "sans-serif";
-$headers-font: "Lato", "sans-serif";
-$font-de-la-show-reparation: "Lato", "sans-serif";
-$font-phone-show: "Lato", "sans-serif";
+$body-font: Inter, "Lato", "sans-serif";
+$headers-font: Inter, "Lato", "sans-serif";
+$font-de-la-show-reparation: Inter, "Lato", "sans-serif";
+$font-phone-show: Inter, "Lato", "sans-serif";
 // To use a font file (.woff) uncomment following lines
 // @font-face {
 //   font-family: "Font Name";
