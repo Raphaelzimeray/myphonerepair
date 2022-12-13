@@ -21,11 +21,16 @@
   border-radius: 8px;
   margin: 20px;
   padding: 20px;
-  height: 100px;
+  height: 400px;
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+  form{
+    display: grid;
+    grid-gap: 20px;
+    padding: 0 20vw 0 20vw;
+  }
+  input[type=submit]{
+    margin-top: 15px;
+  }
 }
 
 .parent-more-info-on-new-buy{
