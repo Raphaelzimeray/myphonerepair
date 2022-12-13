@@ -10,7 +10,7 @@
         <li> Accessoires supplémentaires : <%= @buy.accessories %></li>
         <li> Garantie chosie : <%= @buy.warranty %></li>
       </ul>
-        <%= cl_image_tag @buy.phone.photo.key, class:"photo-show-phone" %>
+        <%= cl_image_tag @buy.phone.photos.first.key, class:"photo-show-phone" %>
     </div>
   </div>
   <div class="parent-go-on-index-buy">
