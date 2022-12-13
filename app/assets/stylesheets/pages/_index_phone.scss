@@ -13,9 +13,10 @@
 .voici-les-telephones {
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid black;
   border-radius: 8px;
   padding: 20px;
+  font-weight: bold;
+  font-size: 50;
 }
 
 .photo-et-caracteristiques-des-telephones {
@@ -104,8 +105,11 @@
 }
 
 .searchbar-index{
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   margin-top: 20px;
   width: 100%;
-}
 
+  .form-control{
+    margin-bottom: 15px;
+  }
+}

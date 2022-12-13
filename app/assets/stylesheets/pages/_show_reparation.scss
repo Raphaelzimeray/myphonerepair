@@ -8,9 +8,10 @@
 .votre-nouvelle-reparation{
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid black;
   border-radius: 8px;
   padding: 20px;
+  font-weight: bold;
+  font-size: 50;
 }
 
 .div-parente-recapitulatif-reparation{
@@ -23,7 +24,7 @@
 .recapitulatif-reparation{
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 8px;
   padding-top: 15px;
   padding-bottom: 8px;
@@ -54,7 +55,7 @@
 
 
 .aller-sur-index-reparation{
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 8px;
   margin: 25px;
   padding: 25px;

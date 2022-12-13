@@ -1,23 +1,24 @@
 <div class="container">
-  <div class="h1-nouvelle-reparation">
-    <h1 class="nouvelle-reparation">Nouvelle réparation:</h1>
+  <div class="h1-new-repair">
+    <h1 class="new-repair">Nouvelle réparation</h1>
   </div>
   <div class="formulaire-nouvelle-reparation-div-parente">
-    <div class="formulaire-nouvelle-reparation">
+    <div class="form-new-repair">
       <%= form_for([@phone, @reparation]) do |f| %>
       <%= f.label :date %>
       <%= f.text_field :date %>
       <%= f.label :price_of_repair %>
       <%= f.text_field :price_of_repair %>
+      <%= f.label :reparation_type %>
       <%= f.select(:reparation_type, Reparation::LISTE_REPARATIONS) %>
       <%= f.submit "Réserver la réparation", class: "btn btn-dark" %>
       <% end %>
     </div>
   </div>
-  <div class="div-parente-elements-marketing">
-    <div class="div-parente-agents-certifies">
+  <div class="parent-div-elements-marketing">
+    <div class="parent-div-certified-workers">
       <div class="agents-certifies">
-        <div class="h4-agents-certifies">
+        <div class="h4-certified-workers">
           <h4>Agents certifiés</h4>
         </div>
         <br>
@@ -25,9 +26,9 @@
         <h6>Formés à réparer selon les recommandations des constructeurs</h6>
       </div>
     </div>
-    <div class="div-parente-garantie">
-      <div class="garantie">
-        <div class="h4-garantie">
+    <div class="parent-div-warranty">
+      <div class="warranty">
+        <div class="h4-warranty">
           <h4>Garantie 2 ans pieces et main d'oeuvre </h4>
         </div>
         <br>

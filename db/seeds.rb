@@ -125,8 +125,11 @@ motorolarazr = Phone.new(
 
 file = URI.open('https://cdn.lesnumeriques.com/optim/news/18/189273/c390e811-motorola-razr-2022__1200_1200__273-0-1195-922.jpeg')
 motorolarazr.photos.attach(io: file, filename: 'motorola.jpeg', content_type: 'motorola/jpeg')
+file = URI.open('https://cdn.lesnumeriques.com/test/15/155245/e0e794cc-motorola-razr-5g-un-smartphone-du-futur-style-mais-depasse_wtmk.jpeg')
+motorolarazr.photos.attach(io: file, filename: 'motorotarazr.jpeg', content_type: 'motorolarazr/jpeg')
+file = URI.open('https://www.01net.com/app/uploads/2021/04/Motorola-Razr-5G-plie-pc.jpg')
+motorolarazr.photos.attach(io: file, filename: 'motorola5g.jpg', content_type: 'motorola5g/jpg')
 motorolarazr.save!
-
 puts "#{motorolarazr.model} has been created!"
 
 huawei_y9 = Phone.new(
@@ -143,6 +146,10 @@ huawei_y9 = Phone.new(
 
 file = URI.open('https://cdns.4clik.com/smartphone/SMTPH9779/huawei-y9-prime-2019-128go-4g-pic-9-lg.jpg')
 huawei_y9.photos.attach(io: file, filename: 'Huaweiy9.jpg', content_type: 'Huaweiy9/jpg')
+file = URI.open('https://www.notebookcheck.biz/uploads/tx_nbc2/HuaweiY9Prime2019__1_.JPG')
+huawei_y9.photos.attach(io: file, filename: 'Huawei.jpg', content_type: 'huawei/jpg')
+file = URI.open('https://d1eh9yux7w8iql.cloudfront.net/product_images/302574_c293448e-b8f9-4c3e-afc3-9438285da72e.jpg')
+huawei_y9.photos.attach(io: file, filename: 'huawei9y.jpg', content_type: 'huawei9y/jpg')
 huawei_y9.save!
 
 puts "#{huawei_y9.model} has been created!"
@@ -161,8 +168,11 @@ iphoneSE = Phone.new(
 
 file = URI.open('https://images.frandroid.com/wp-content/uploads/2016/05/iphone-se-15.jpg')
 iphoneSE.photos.attach(io: file, filename: 'Iphonese.jpg', content_type: 'Iphonese/jpg')
+file = URI.open('https://www.numerama.com/content/uploads/2016/04/iphone-se-test-3.jpg')
+iphoneSE.photos.attach(io: file, filename: 'IphoneSE.jpg', content_type: 'IphoneSE/jpg')
+file = URI.open('https://img.ricardostatic.ch/t_1000x750/pl/1199091462/0/1/iphone-se-2016-32gb.jpg')
+iphoneSE.photos.attach(io: file, filename: 'IphoneSEgrey.jpg', content_type: 'IphoneSEgrey/jpg')
 iphoneSE.save!
-
 puts "#{iphoneSE.model} has been created!"
 
 iphone12promax = Phone.new(
