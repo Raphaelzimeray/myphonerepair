@@ -11,7 +11,7 @@
             <p> Accesoires: <%= buy.accessories %></p>
           </div>
           <div class="photo-index-buy">
-            <%= cl_image_tag buy.phone.photo.key, class: "photo-index-buy"  %>
+            <%= cl_image_tag buy.phones.photo.first.key, class: "photo-index-buy"  %>
           </div>
         </div>
       <% end %>
