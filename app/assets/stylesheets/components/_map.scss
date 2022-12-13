@@ -1,0 +1,23 @@
+.mapboxgl-popup {
+  max-width: 200px!important;
+  border-radius: 8px;
+  box-shadow: -4px 4px 20px rgba(0, 0, 0, 0.2);
+  color:#FD6D34;
+  background-color: #FFE8E0;
+  font-family: $font-phone-show;
+
+  a{
+    text-decoration: none;
+    color: #FD6D34
+  }
+}
+
+.mapboxgl-popup-content {
+  text-align: center;
+  font-family: $font-phone-show;
+  background-color: #FFE8E0!important;
+}
+
+.h1-phone-brand-mapbox{
+  border: 1px solid #FFE8E0;
+}
