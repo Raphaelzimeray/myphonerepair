@@ -2,7 +2,16 @@
   <div class="h1-voici-les-telephones">
     <h1 class="voici-les-telephones"> Voici les téléphones que vous pouvez réparer chez nous</h1>
   </div>
-
+  <div class="searchbar-index">
+    <%= form_with url: phones_path, method: :get, class: "d-flex" do %>
+      <%= text_field_tag :query,
+        params[:query],
+        class: "form-control",
+        placeholder: "Trouvez votre téléphone"
+      %>
+      <%= submit_tag "Search", class: "btn btn-dark" %>
+    <% end %>
+  </div>
   <div class="photo-et-caracteristiques-des-telephones">
     <% @phones.each do |phone| %>
       <%= link_to phone_path(phone), class: 'link-index' do %>
