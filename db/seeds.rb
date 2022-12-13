@@ -32,7 +32,8 @@ iphone14pro = Phone.new(
   camera: "48 Mégapixels",
   year: 2022,
   processor: "A16 Bionic",
-  price: 1459
+  price: 1459,
+  address: "7 rue Beaujon, 75008, Paris"
 )
 
 file = URI.open('https://www.apple.com/v/iphone-14-pro/c/images/overview/hero/hero_endframe__dtzvajyextyu_large.jpg')
@@ -52,7 +53,8 @@ samsunggalaxys22 = Phone.new(
   camera: "108 Mégapixels",
   year: 2022,
   processor: "SoC Exynos 2200",
-  price: 1349
+  price: 1349,
+  address: "42 rue de l'eglise, 75015, Paris"
 )
 
 file = URI.open('https://droidsoft.fr/wp-content/uploads/2022/03/Samsung-Galaxy-S22-Introduction-scaled.jpg')
@@ -73,7 +75,8 @@ googlepixel7 = Phone.new(
   camera: "50 + 12 Mégapixels",
   year: 2022,
   processor: "Tensor G2",
-  price: 649
+  price: 649,
+  address: "19 rue du Docteur Blanche, 75116, Paris"
 )
 
 file = URI.open('https://m.media-amazon.com/images/S/aplus-media-library-service-media/e8f773d8-520b-4fcf-a89c-53a92aa6e32f.__CR0,0,1464,600_PT0_SX1464_V1___.jpg')
@@ -94,7 +97,8 @@ nokia7plus = Phone.new(
   camera: "13 Mégapixels",
   year: 2018,
   processor: "Snapdragon 660",
-  price: 184
+  price: 184,
+  address: "57 rue des Belles feuilles, 75116, Paris"
 )
 
 file = URI.open('https://360view.hum3d.com/zoom/Nokia/Nokia_7_Plus_White_1000_0002.jpg')
@@ -115,7 +119,8 @@ motorolarazr = Phone.new(
   camera: "50 + 13 Mégapixels",
   year: 2022,
   processor: "Snapdraon 8+ Gen1",
-  price: 1299
+  price: 1299,
+  address: "82 Avenue de Villiers, 75017, Paris"
 )
 
 file = URI.open('https://cdn.lesnumeriques.com/optim/news/18/189273/c390e811-motorola-razr-2022__1200_1200__273-0-1195-922.jpeg')
@@ -132,7 +137,8 @@ huawei_y9 = Phone.new(
   camera: "13 + 2 Mégapixels",
   year: 2019,
   processor: "Krin 710",
-  price: "143"
+  price: "143",
+  address: "16 Villa Gaudelet, Paris"
 )
 
 file = URI.open('https://cdns.4clik.com/smartphone/SMTPH9779/huawei-y9-prime-2019-128go-4g-pic-9-lg.jpg')
@@ -149,7 +155,8 @@ iphoneSE = Phone.new(
   camera: "12 Mégapixels",
   year: 2016,
   processor: "A9",
-  price: "89"
+  price: "89",
+  address: "15 Boulevard de courcelles, 75008, Paris"
 )
 
 file = URI.open('https://images.frandroid.com/wp-content/uploads/2016/05/iphone-se-15.jpg')
@@ -166,7 +173,8 @@ iphone12promax = Phone.new(
   camera: "12 Mégapixels",
   year: 2020,
   processor: "A14 Bionic",
-  price: "729"
+  price: "729",
+  address: "12 Rue de Milan, 75009 Paris"
 )
 
 file = URI.open('https://images.bfmtv.com/MAtvQtgAYvLnK43_8RImYaz23KI=/0x0:2048x1365/2048x0/biz_dev/1655121521444_iphone_12_pro_max_offre_cdiscount_jpg.jpg')
@@ -183,7 +191,8 @@ samsungA71 = Phone.new(
   camera: "64 Mégapixels",
   year: 2019,
   processor: "Snapdragon 730 Qualcomm",
-  price: "279"
+  price: "279",
+  address: "235 Rue du Faubourg Saint-Honoré, 75008 Paris"
 )
 
 file = URI.open('https://media.ldlc.com/r1600/ld/products/00/05/55/97/LD0005559736_2.jpg')
@@ -201,7 +210,8 @@ sony_xperia_10 = Phone.new(
   camera: "12 + 8 + 8 Mégapixels",
   year: 2020,
   processor: "Snapdragon 665",
-  price: "328"
+  price: "328",
+  address: "75 Rue de Tolbiac, 75013 Paris"
 )
 
 file = URI.open('https://www.tradeinn.com/f/13798/137988687_2/sony-smartphone-xperia-10-ii-4gb-128gb-6-dual-sim.jpg')

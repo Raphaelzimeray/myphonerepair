@@ -6,7 +6,12 @@ class PhonesController < ApplicationController
     else
       @phones = Phone.all
     end
-
+    @markers = @phones.geocoded.map do |flat|
+      {
+        lat: flat.latitude,
+        lng: flat.longitude
+      }
+    end
   end
 
   def show
