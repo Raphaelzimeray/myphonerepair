@@ -12,7 +12,7 @@
             <p> Prix de la réservation: <%= reparation.price_of_repair %> € </p>
           </div>
           <div class="photo-reservation">
-             <%= cl_image_tag reparation.phone.photo.key, class:"phone-photo-index-reparation" %>
+             <%= cl_image_tag reparation.phone.photos.first.key, class:"phone-photo-index-reparation" %>
           </div>
         </div>
       <% end %>
