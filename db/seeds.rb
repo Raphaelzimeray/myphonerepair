@@ -54,7 +54,7 @@ samsunggalaxys22 = Phone.new(
   year: 2022,
   processor: "SoC Exynos 2200",
   price: 1349,
-  address: "42 rue de l'eglise, 75015, Paris"
+  address: "46 Av. de Wagram, 75008 Paris"
 )
 
 file = URI.open('https://droidsoft.fr/wp-content/uploads/2022/03/Samsung-Galaxy-S22-Introduction-scaled.jpg')
@@ -156,7 +156,7 @@ iphoneSE = Phone.new(
   year: 2016,
   processor: "A9",
   price: "89",
-  address: "15 Boulevard de courcelles, 75008, Paris"
+  address: "16 Vla Gaudelet, 75011 Paris"
 )
 
 file = URI.open('https://images.frandroid.com/wp-content/uploads/2016/05/iphone-se-15.jpg')
@@ -211,7 +211,7 @@ sony_xperia_10 = Phone.new(
   year: 2020,
   processor: "Snapdragon 665",
   price: "328",
-  address: "75 Rue de Tolbiac, 75013 Paris"
+  address: "226 Bd Voltaire, 75011 Paris"
 )
 
 file = URI.open('https://www.tradeinn.com/f/13798/137988687_2/sony-smartphone-xperia-10-ii-4gb-128gb-6-dual-sim.jpg')
