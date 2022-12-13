@@ -54,7 +54,7 @@
 }
 
 .get-phone-in-store{
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 8px;
   margin: 20px;
   padding: 20px;
@@ -65,11 +65,17 @@
   display: flex;
   justify-content: center;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .get-phone-at-home{
-  border: 1px solid black;
+  border: 1px solid gray;
   border-radius: 8px;
   margin: 20px;
   padding: 20px;
+}
+
+.h2-phone-at-home{
+  font-weight: bold;
+  font-size: 10px;
 }
