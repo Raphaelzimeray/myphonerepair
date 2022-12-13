@@ -1,7 +1,12 @@
 class PhonesController < ApplicationController
 
   def index
-    @phones = Phone.all
+    if params[:query].present?
+      @phones = Phone.where("model ILIKE ?", "%#{params[:query]}%")
+    else
+      @phones = Phone.all
+    end
+
   end
 
   def show
