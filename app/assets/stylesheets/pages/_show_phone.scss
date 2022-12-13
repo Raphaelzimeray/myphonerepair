@@ -93,3 +93,49 @@
   border-radius: 8px;
   margin-bottom: 40px;
 }
+
+.div-go-to-buy-and-repair{
+  display: flex;
+  flex-direction: row;
+  margin-top: 35px;
+}
+
+.button-pink{
+  color : #CF68D6;
+  background-color: #F0DBDB;
+  text-decoration: none;
+  margin: auto;
+  text-align: center;
+}
+
+.button-pink:hover{
+  color: #CF68D6;
+}
+
+#show-buy{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+.acheter{
+  margin-left: 8%;
+}
+
+.boxes-repair-and-buy-boxes{
+  margin-left: 10%;
+  border: 1px solid #CF68D6;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  width: 125px;
+  height: 60px;
+  margin-bottom: 30px;
+  color : #CF68D6;
+  background-color: #F0DBDB;
+
+}
+
+.acheter{
+  margin-left: 8%;
+}

@@ -57,4 +57,14 @@
       </div>
     </div>
   </div>
+  <div class="div-go-to-buy-and-repair">
+    <p class="acheter"> Acheter:</p>
+      <div class="boxes-repair-and-buy-boxes">
+          <p id="show-buy"> <%= link_to "Acheter ce téléphone", new_phone_buy_path(@phone), class:"button-pink" %></p>
+      </div>
+      <p class="acheter"> Réparer:</p>
+        <div class="boxes-repair-and-buy-boxes">
+          <p id="show-buy"> <%= link_to "Réparer ce téléphone", new_phone_reparation_path(@phone), class:"button-pink" %></p>
+        </div>
+  </div>
 </div>

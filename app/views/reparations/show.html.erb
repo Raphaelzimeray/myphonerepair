@@ -12,7 +12,7 @@
         <li> Modèle du téléphone : <%= @reparation.phone.model %></li>
         <li> Type de réparation : <%= @reparation.reparation_type %></li>
       </ul>
-       <%= cl_image_tag @reparation.phone.photo.key, class:"photo-show-reparation" %>
+       <%= cl_image_tag @reparation.phone.photos.first.key, class:"photo-show-reparation" %>
     </div>
   </div>
   <div class="div-parente-aller-sur-index-reparations">
