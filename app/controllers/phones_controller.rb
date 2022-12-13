@@ -6,10 +6,11 @@ class PhonesController < ApplicationController
     else
       @phones = Phone.all
     end
-    @markers = @phones.geocoded.map do |flat|
+    @markers = @phones.geocoded.map do |phone|
       {
-        lat: flat.latitude,
-        lng: flat.longitude
+        lat: phone.latitude,
+        lng: phone.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { phone: phone })
       }
     end
   end
