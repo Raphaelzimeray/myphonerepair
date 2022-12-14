@@ -9,9 +9,9 @@ class ReviewsController < ApplicationController
   def create
     @review = Review.create(reviews_params)
     @review.phone = Phone.find(params[:phone_id])
-    @phone = Phone.find(params[:phone_id])
-      if @review.save
-        redirect_to phones_path
+    @review.user = current_user
+      if @review.save!
+        redirect_to phone_path(@review.phone)
       else
         render :new
       end
