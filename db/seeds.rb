@@ -16,8 +16,9 @@ puts "Cleaning database"
 Reparation.destroy_all
 
 
-
 Buy.destroy_all
+
+Review.destroy_all
 
 Phone.destroy_all
 
