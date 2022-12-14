@@ -6,7 +6,7 @@
   <div class="parent-div-form-new-review">
     <%= simple_form_for([@phone, @review]) do |f| %>
     <%= f.input :rating, collection: Review::NUMBER_RATING %>
-    <%= f.input :comment %>
+    <%= f.input :comment, placeholder: "Ecrivez votre commentaire ici..." %>
     <%= f.submit "Notez", class: "btn btn-dark" %>
     <% end %>
   </div>

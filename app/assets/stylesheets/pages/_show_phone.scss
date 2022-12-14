@@ -157,13 +157,33 @@
 .ratings-show-phone-parent{
   border-radius: 8px;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   margin: auto;
   border: 1px solid gray;
-  width: 80%;
+  width: 55%;
   padding: 20px;
   margin-bottom: 100px;
   p{
     text-align: center;
+  }
+}
+
+.star-png{
+  width: 20px;
+  height: 20px;
+}
+
+.parent-star-png-review{
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  .star-png{
+    margin: 5px;
+  }
+}
+
+.comment-review-show-phone{
+  p{
+    margin-bottom: 0px!important;
   }
 }
