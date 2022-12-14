@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :phones, only: [ :index, :show, :new, :create ] do
     resources :reparations, only: [ :new, :create ]
     resources :buys, only: [ :new, :create ]
+    resources :reviews, only: [ :new, :create ]
   end
   resources :reparations, only: [ :index, :show ]
   resources :buys, only: [ :index, :show ]
