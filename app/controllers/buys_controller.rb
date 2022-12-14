@@ -1,7 +1,7 @@
 class BuysController < ApplicationController
 
   def index
-    @buys = Buy.all
+    @buys = Buy.all.where(user_id: current_user.id)
   end
 
   def show
@@ -18,7 +18,8 @@ class BuysController < ApplicationController
   def create
     @buy = Buy.create(buy_params)
     @buy.phone = Phone.find(params[:phone_id])
-      if @buy.save
+    @buy.user = current_user
+      if @buy.save!
         redirect_to buy_path(@buy)
       else
         render :new

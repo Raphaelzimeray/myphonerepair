@@ -1,7 +1,7 @@
 class ReparationsController < ApplicationController
 
   def index
-    @reparations = Reparation.all
+    @reparations = Reparation.all.where(user_id: current_user.id)
   end
 
   def show
@@ -17,6 +17,7 @@ class ReparationsController < ApplicationController
   def create
     @reparation = Reparation.create(reparation_params)
     @reparation.phone = Phone.find(params[:phone_id])
+    @reparation.user = current_user
       if @reparation.save
         redirect_to  reparation_path(@reparation)
       else
