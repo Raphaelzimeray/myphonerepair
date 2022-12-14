@@ -18,7 +18,6 @@ class BuysController < ApplicationController
   def create
     @buy = Buy.create(buy_params)
     @buy.phone = Phone.find(params[:phone_id])
-    @phone = Phone.find(params[:phone_id])
       if @buy.save
         redirect_to buy_path(@buy)
       else

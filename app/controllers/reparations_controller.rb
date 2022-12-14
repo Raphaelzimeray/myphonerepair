@@ -17,7 +17,6 @@ class ReparationsController < ApplicationController
   def create
     @reparation = Reparation.create(reparation_params)
     @reparation.phone = Phone.find(params[:phone_id])
-    @phone = Phone.find(params[:phone_id])
       if @reparation.save
         redirect_to  reparation_path(@reparation)
       else
