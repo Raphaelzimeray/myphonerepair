@@ -1,0 +1,43 @@
+.h1-new-review{
+  display: flex;
+  justify-content: center;
+}
+
+.new-review{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 50;
+}
+
+.parent-div-form-new-review{
+  border: 1px solid gray;
+  border-radius: 8px;
+  margin-top: 30px;
+  padding: 20px;
+  form{
+    margin: auto;
+    width: 58%;
+  }
+  label{
+    font-weight: bold;
+    font-size: 30;
+  }
+  input{
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin-top: 25px;
+  }
+  textarea{
+    border-radius: 8px;
+    border: 1px solid gray;
+  }
+
+  input[type=submit]{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}
