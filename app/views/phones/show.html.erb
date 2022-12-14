@@ -71,4 +71,16 @@
           <p class="show-buy"> <%= link_to "Evaluer ce téléphone",  new_phone_review_path(@phone), class:"button-pink" %></p>
         </div>
   </div>
+
+
+  <div class="h3-parent-review-show-phone">
+    <h3 class="h3-review-show-phone"> Evaluations du téléphone par les utilisateurs </h3>
+  </div>
+  <div class="ratings-show-phone-parent">
+    <% @phone.reviews.each do |review| %>
+    <p> Note: <%= review.rating %>/5</p>
+    <p> Avis: "<%= review.comment %>"</p>
+    <% end %>
+  </div>
+
 </div>

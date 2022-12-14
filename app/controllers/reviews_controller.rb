@@ -11,7 +11,7 @@ class ReviewsController < ApplicationController
     @review.phone = Phone.find(params[:phone_id])
     @review.user = current_user
       if @review.save!
-        redirect_to phones_path
+        redirect_to phone_path(@review.phone)
       else
         render :new
       end

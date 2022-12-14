@@ -140,3 +140,30 @@
 .acheter{
   margin-left: 8%;
 }
+
+.h3-parent-review-show-phone{
+  display: flex;
+  justify-content: center;
+}
+
+.h3-review-show-phone{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 50;
+}
+
+.ratings-show-phone-parent{
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid gray;
+  width: 80%;
+  padding: 20px;
+  margin-bottom: 100px;
+  p{
+    text-align: center;
+  }
+}
