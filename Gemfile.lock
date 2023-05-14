@@ -101,6 +101,8 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dockerfile-rails (1.2.5)
+      rails
     domain_name (0.5.20190701)
       unf (>= 0.0.5, < 1.0.0)
     dotenv (2.8.1)
@@ -154,6 +156,8 @@ GEM
       net-protocol
     netrc (0.11.0)
     nio4r (2.5.8)
+    nokogiri (1.13.10-aarch64-linux)
+      racc (~> 1.4)
     nokogiri (1.13.10-arm64-darwin)
       racc (~> 1.4)
     nokogiri (1.13.10-x86_64-linux)
@@ -280,7 +284,9 @@ GEM
     zeitwerk (2.6.6)
 
 PLATFORMS
+  aarch64-linux
   arm64-darwin-21
+  arm64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
@@ -290,6 +296,7 @@ DEPENDENCIES
   capybara (>= 3.26)
   cloudinary (~> 1.16.0)
   devise
+  dockerfile-rails (>= 1.2)
   dotenv-rails
   font-awesome-sass (~> 5.6.1)
   geocoder
